@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding-app';
+  num = 0;
+  hide:boolean = true;
+  
+  onPress() {
+    
+   this.num++;
+    alert(this.num);
+  }
+
+  onStar(){
+    this.hide=false;
+  }
 }
